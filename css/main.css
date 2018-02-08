@@ -1,0 +1,90 @@
+/* main content site */
+
+main {
+	padding: 2%;
+}
+
+
+p{
+	clear: both;
+}
+
+div.start {
+	text-align: center;
+}
+
+p.start {
+	text-align: left;
+}
+
+.logo {
+	width: 30%;
+}
+
+/* CARDS */
+
+.cards {
+	padding: 0.2em;
+	text-align: center;
+}
+
+.card-30 {
+	width: 30%;
+	height: 100%;
+	position: relative;
+	display: inline-block;
+	border: 2px;
+	border-color: black;
+	margin: 1%;
+	background-color: #cfcfcf;
+	
+}
+
+.card-img {
+	width: 100%;
+	display: block;
+	height: auto;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.card-overlay.red {
+	  background-color: #a71930;
+}
+
+.card-overlay.green {
+	  background-color: #00693c;
+}
+
+.card-overlay.black {
+	  background-color: black;
+}
+
+.card-30:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+a.card{
+	opacity: 0.9;
+}
